@@ -30,20 +30,22 @@ Plataforma e-commerce completa desenvolvida para uma marca de moda, abrangendo t
 
 Sistema **fullstack** pronto para produção com integração de **pagamentos** (Mercado Pago), **cálculo de frete** (Melhor Envio / Correios) e **otimização de imagens** (WebP + thumbnails + placeholders blur).
 
+**🌐 Projeto em produção:** [roccainternazionale.com](https://roccainternazionale.com)
+
 ### 📸 Preview
 
 Dados reais ocultados por questões de segurança.
 
 <table>
   <tr>
-    <td align="center"><img src="docs/screenshots/home.png" alt="Home" width="270"/><br/><sub>Home / Loja</sub></td>
-    <td align="center"><img src="docs/screenshots/product.png" alt="Produto" width="270"/><br/><sub>Detalhe do Produto</sub></td>
+    <td align="center"><img src="docs/screenshots/shop.png" alt="Loja" width="270"/><br/><sub>Loja / Vitrine</sub></td>
+    <td align="center"><img src="docs/screenshots/productDetail.png" alt="Detalhe do Produto" width="270"/><br/><sub>Detalhe do Produto</sub></td>
     <td align="center"><img src="docs/screenshots/cart.png" alt="Carrinho" width="270"/><br/><sub>Carrinho</sub></td>
   </tr>
   <tr>
     <td align="center"><img src="docs/screenshots/checkout.png" alt="Checkout" width="270"/><br/><sub>Checkout</sub></td>
-    <td align="center"><img src="docs/screenshots/admin_products.png" alt="Admin Produtos" width="270"/><br/><sub>Admin — Produtos</sub></td>
-    <td align="center"><img src="docs/screenshots/admin_orders.png" alt="Admin Pedidos" width="270"/><br/><sub>Admin — Pedidos</sub></td>
+    <td align="center"><img src="docs/screenshots/products.png" alt="Produtos" width="270"/><br/><sub>Catálogo de Produtos</sub></td>
+    <td align="center"><img src="docs/screenshots/archive&sidebar.png" alt="Archive e Sidebar" width="270"/><br/><sub>Archive & Sidebar</sub></td>
   </tr>
 </table>
 
