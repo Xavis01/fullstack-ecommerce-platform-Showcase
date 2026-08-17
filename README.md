@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">🛒 Fullstack E-Commerce Platform</h1>
   <p align="center">
-    Plataforma e-commerce fullstack completa, desenvolvida do zero — da loja pública ao painel administrativo.
+    A complete fullstack e-commerce platform, built from scratch — from the public storefront to the admin panel.
     <br/>
     <strong>Vue.js · Flask · MySQL · Tailwind CSS · Mercado Pago · Melhor Envio · Nginx · VPS</strong>
   </p>
@@ -20,178 +20,178 @@
 
 ---
 
-> **⚠️ Repositório Showcase** — Esta é uma versão sanitizada de um sistema em **produção real**. Credenciais, variáveis de ambiente e configurações sensíveis foram removidas por segurança. O código está disponível **apenas para visualização e análise**.
+> **⚠️ Showcase Repository** — This is a sanitized version of a system running in **real production**. Credentials, environment variables, and sensitive configurations have been removed for security reasons. The code is available **for viewing and analysis purposes only**.
 
 ---
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-Plataforma e-commerce completa desenvolvida para uma marca de moda, abrangendo toda a jornada — desde a **loja pública** com catálogo, carrinho e checkout, até o **painel administrativo** com gestão de produtos, pedidos, cupons, precificação e vendas rápidas.
+A complete e-commerce platform built for a fashion brand, covering the entire journey — from the **public storefront** with catalog, cart, and checkout, to the **admin panel** with product management, orders, coupons, pricing, and quick sales.
 
-Sistema **fullstack** pronto para produção com integração de **pagamentos** (Mercado Pago), **cálculo de frete** (Melhor Envio / Correios) e **otimização de imagens** (WebP + thumbnails + placeholders blur).
+A production-ready **fullstack** system with **payment** integration (Mercado Pago), **shipping calculation** (Melhor Envio / Correios), and **image optimization** (WebP + thumbnails + blur placeholders).
 
-**🌐 Projeto em produção:** [roccainternazionale.com](https://roccainternazionale.com)
+**🌐 Live project:** [roccainternazionale.com](https://roccainternazionale.com)
 
 ### 📸 Preview
 
-Dados reais ocultados por questões de segurança.
+Real data hidden for security reasons.
 
 <table>
   <tr>
-    <td align="center"><img src="docs/screenshots/shop.png" alt="Loja" width="270"/><br/><sub>Loja / Vitrine</sub></td>
-    <td align="center"><img src="docs/screenshots/productDetail.png" alt="Detalhe do Produto" width="270"/><br/><sub>Detalhe do Produto</sub></td>
-    <td align="center"><img src="docs/screenshots/cart.png" alt="Carrinho" width="270"/><br/><sub>Carrinho</sub></td>
+    <td align="center"><img src="docs/screenshots/shop.png" alt="Shop" width="270"/><br/><sub>Shop / Storefront</sub></td>
+    <td align="center"><img src="docs/screenshots/productDetail.png" alt="Product Detail" width="270"/><br/><sub>Product Detail</sub></td>
+    <td align="center"><img src="docs/screenshots/cart.png" alt="Cart" width="270"/><br/><sub>Cart</sub></td>
   </tr>
   <tr>
     <td align="center"><img src="docs/screenshots/checkout.png" alt="Checkout" width="270"/><br/><sub>Checkout</sub></td>
-    <td align="center"><img src="docs/screenshots/products.png" alt="Produtos" width="270"/><br/><sub>Catálogo de Produtos</sub></td>
-    <td align="center"><img src="docs/screenshots/archive&sidebar.png" alt="Archive e Sidebar" width="270"/><br/><sub>Archive & Sidebar</sub></td>
+    <td align="center"><img src="docs/screenshots/products.png" alt="Products" width="270"/><br/><sub>Product Catalog</sub></td>
+    <td align="center"><img src="docs/screenshots/archive&sidebar.png" alt="Archive and Sidebar" width="270"/><br/><sub>Archive & Sidebar</sub></td>
   </tr>
 </table>
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-### 🛍️ Loja Pública
+### 🛍️ Public Storefront
 
-#### 🏠 Vitrine / Home
-- Catálogo de produtos com grid responsivo
-- Filtros por **categorias** e **coleções**
-- Ordenação e paginação
-- Imagens otimizadas com **lazy loading** + **placeholder blur** (base64)
-- Agendamento de publicação de produtos
+#### 🏠 Storefront / Home
+- Product catalog with a responsive grid
+- Filters by **categories** and **collections**
+- Sorting and pagination
+- Optimized images with **lazy loading** + **blur placeholder** (base64)
+- Product publish scheduling
 
-#### 📦 Detalhe do Produto
-- Galeria de imagens com seleção de variantes (tamanhos)
-- Controle de estoque por variante (P, M, G, GG, Único)
-- Preço dinâmico e verificação de disponibilidade em tempo real
+#### 📦 Product Detail
+- Image gallery with variant selection (sizes)
+- Stock control per variant (S, M, L, XL, One Size)
+- Dynamic pricing and real-time availability check
 
-#### 🛒 Carrinho de Compras
-- Persistência no backend (vinculado ao usuário logado)
-- Controle de quantidade com validação de estoque
-- Aplicação de cupons de desconto
-- Dropdown de preview no navbar
+#### 🛒 Shopping Cart
+- Backend persistence (linked to the logged-in user)
+- Quantity control with stock validation
+- Discount coupon application
+- Preview dropdown in the navbar
 
-#### 💳 Checkout Completo
-- Formulário de endereço com busca de CEP automática
-- Cálculo de frete integrado com **Melhor Envio** (PAC / SEDEX)
-- Pagamento via **Mercado Pago** (Pix e Cartão de Crédito)
-- Parcelamento configurável
-- Webhooks de confirmação de pagamento
-- Telas de sucesso e de aguardando Pix
+#### 💳 Full Checkout
+- Address form with automatic zip code lookup
+- Shipping calculation integrated with **Melhor Envio** (PAC / SEDEX)
+- Payment via **Mercado Pago** (Pix and Credit Card)
+- Configurable installments
+- Payment confirmation webhooks
+- Success and awaiting-Pix-payment screens
 
-#### 🔐 Autenticação de Clientes
-- Cadastro com **verificação de e-mail** (OTP de 6 dígitos)
-- Login com **JWT** (JSON Web Tokens)
-- Troca de e-mail e senha com validação OTP
-- Recuperação de senha via e-mail
-- Área do cliente: perfil e histórico de pedidos
+#### 🔐 Customer Authentication
+- Sign-up with **e-mail verification** (6-digit OTP)
+- Login with **JWT** (JSON Web Tokens)
+- E-mail and password change with OTP validation
+- Password recovery via e-mail
+- Customer area: profile and order history
 
-### 🔧 Painel Administrativo
+### 🔧 Admin Panel
 
-#### 📦 Gestão de Produtos
-- CRUD completo com variantes de tamanho e estoque por variante
-- Upload de múltiplas imagens com **drag & drop** e reordenação
-- Otimização automática: conversão WebP, thumbnail (600px), placeholder blur (20px)
-- Agendamento de publicação (publish scheduling)
-- Lixeira de produtos (soft delete com restauração)
-- Ordenação customizada dos produtos na loja (sort_order)
+#### 📦 Product Management
+- Full CRUD with size variants and per-variant stock
+- Multiple image upload with **drag & drop** and reordering
+- Automatic optimization: WebP conversion, thumbnail (600px), blur placeholder (20px)
+- Publish scheduling
+- Product trash (soft delete with restore)
+- Custom product ordering in the store (sort_order)
 
-#### 🏷️ Categorias & Coleções
-- CRUD de categorias e coleções
-- Associação N:N com produtos
-- Ordenação de destaque por categoria (highlight_order)
+#### 🏷️ Categories & Collections
+- CRUD for categories and collections
+- N:N association with products
+- Featured ordering per category (highlight_order)
 
-#### 🎟️ Sistema de Cupons
-- Cupons de desconto: percentual ou valor fixo
-- Frete grátis como benefício de cupom
-- Regras avançadas: gasto mínimo/máximo, uso individual, data de validade
-- Filtros por produtos, categorias e coleções (inclusão e exclusão)
-- Limites de uso total e por conta
-- Ativação/desativação de cupons
+#### 🎟️ Coupon System
+- Discount coupons: percentage or fixed value
+- Free shipping as a coupon benefit
+- Advanced rules: minimum/maximum spend, individual use, expiration date
+- Filters by products, categories, and collections (inclusion and exclusion)
+- Total and per-account usage limits
+- Coupon activation/deactivation
 
-#### 📋 Gestão de Pedidos
-- Listagem de pedidos com filtros de status
-- Detalhes completos: itens, endereço, frete, pagamento
-- Integração com **Melhor Envio** para adicionar ao carrinho de despacho
+#### 📋 Order Management
+- Order listing with status filters
+- Full details: items, address, shipping, payment
+- Integration with **Melhor Envio** to add to the shipping cart
 
-#### 💰 Vendas Rápidas (Presenciais)
-- Registro de vendas presenciais (balcão/evento)
-- Seleção de produtos e variantes com controle de estoque
-- Métodos: Pix, Dinheiro, Cartão, Cota
-- CRUD completo (criar, editar, visualizar, deletar)
+#### 💰 Quick Sales (In-Person)
+- Recording of in-person sales (counter/event)
+- Product and variant selection with stock control
+- Payment methods: Pix, Cash, Card, Installments
+- Full CRUD (create, edit, view, delete)
 
-#### 💲 Precificação
-- Calculadora de precificação por produto
-- Custo, preço, subsídio de frete, ads
+#### 💲 Pricing
+- Per-product pricing calculator
+- Cost, price, shipping subsidy, ads
 
-#### 👥 Gestão de Usuários/Clientes
-- Listagem de clientes com promoção a admin
-- Controle de permissões (cliente vs. admin)
+#### 👥 User/Customer Management
+- Customer listing with promotion to admin
+- Permission control (customer vs. admin)
 
-#### 📊 Políticas e Páginas Legais
-- Política de Privacidade e Política de Devolução renderizadas no frontend
+#### 📊 Policies and Legal Pages
+- Privacy Policy and Return Policy rendered on the frontend
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 🛠️ Tech Stack
 
 ### Frontend
-| Tecnologia | Uso |
+| Technology | Use |
 |---|---|
-| **Vue.js 3** | Framework SPA com Composition API |
-| **Vite 6** | Build tool e dev server |
-| **Tailwind CSS 3** | Estilização utilitária |
-| **Pinia** | Gerenciamento de estado global (carrinho, auth, UI) |
-| **Vue Router 4** | Roteamento SPA com guards de autenticação |
-| **Axios** | HTTP client para API REST |
-| **Mercado Pago SDK** | Integração de pagamentos (Pix + Cartão) |
-| **Lucide Icons** | Biblioteca de ícones |
-| **Vue Toastification** | Notificações toast |
-| **Reka UI** | Componentes UI headless |
-| **shadcn-vue** | Sistema de componentes estilizados |
+| **Vue.js 3** | SPA framework with Composition API |
+| **Vite 6** | Build tool and dev server |
+| **Tailwind CSS 3** | Utility-first styling |
+| **Pinia** | Global state management (cart, auth, UI) |
+| **Vue Router 4** | SPA routing with authentication guards |
+| **Axios** | HTTP client for REST API |
+| **Mercado Pago SDK** | Payment integration (Pix + Card) |
+| **Lucide Icons** | Icon library |
+| **Vue Toastification** | Toast notifications |
+| **Reka UI** | Headless UI components |
+| **shadcn-vue** | Styled component system |
 | **VueUse** | Composition utilities |
 
 ### Backend
-| Tecnologia | Uso |
+| Technology | Use |
 |---|---|
-| **Python / Flask 3.1** | Framework web e API REST |
-| **Flask-SQLAlchemy** | ORM para modelagem e consultas ao banco de dados |
-| **Flask-JWT-Extended** | Autenticação baseada em tokens JWT |
-| **Flask-Bcrypt** | Hash seguro de senhas |
-| **Flask-Limiter** | Rate limiting por IP |
-| **Flask-Talisman** | Security headers e CSP (Content Security Policy) |
-| **Flask-CORS** | Controle de CORS dinâmico (dev/prod) |
-| **Flask-Mail** | Envio de e-mails transacionais (OTP, confirmações) |
-| **Pillow (PIL)** | Processamento de imagens: resize, WebP, thumbnails, placeholders |
-| **PyMySQL** | Driver de conexão com MySQL |
-| **APScheduler** | Agendamento de tarefas (publicação programada de produtos) |
-| **Requests** | Comunicação com APIs externas (Melhor Envio, VPS) |
+| **Python / Flask 3.1** | Web framework and REST API |
+| **Flask-SQLAlchemy** | ORM for database modeling and queries |
+| **Flask-JWT-Extended** | JWT token-based authentication |
+| **Flask-Bcrypt** | Secure password hashing |
+| **Flask-Limiter** | Rate limiting per IP |
+| **Flask-Talisman** | Security headers and CSP (Content Security Policy) |
+| **Flask-CORS** | Dynamic CORS control (dev/prod) |
+| **Flask-Mail** | Transactional e-mail sending (OTP, confirmations) |
+| **Pillow (PIL)** | Image processing: resize, WebP, thumbnails, placeholders |
+| **PyMySQL** | MySQL connection driver |
+| **APScheduler** | Task scheduling (scheduled product publishing) |
+| **Requests** | Communication with external APIs (Melhor Envio, VPS) |
 
-### Integrações Externas
-| Serviço | Uso |
+### External Integrations
+| Service | Use |
 |---|---|
-| **Mercado Pago** | Gateway de pagamento (Pix + Cartão de Crédito) |
-| **Melhor Envio** | Cálculo de frete (PAC / SEDEX) e geração de etiquetas |
-| **Gmail SMTP** | Envio de e-mails transacionais (verificação, senha) |
+| **Mercado Pago** | Payment gateway (Pix + Credit Card) |
+| **Melhor Envio** | Shipping calculation (PAC / SEDEX) and label generation |
+| **Gmail SMTP** | Transactional e-mail sending (verification, password) |
 
-### Infraestrutura
-| Tecnologia | Uso |
+### Infrastructure
+| Technology | Use |
 |---|---|
-| **Linux (Ubuntu VPS)** | Servidor de produção |
-| **Nginx** | Reverse proxy, SSL/TLS e arquivos estáticos |
-| **Gunicorn** | WSGI HTTP Server para Flask |
-| **MySQL** | Banco de dados relacional |
+| **Linux (Ubuntu VPS)** | Production server |
+| **Nginx** | Reverse proxy, SSL/TLS, and static files |
+| **Gunicorn** | WSGI HTTP Server for Flask |
+| **MySQL** | Relational database |
 
 ---
 
-## 🏗️ Arquitetura
+## 🏗️ Architecture
 
 ```mermaid
 flowchart TD
-    CLIENT["🖥️ Cliente - Browser\nVue.js 3 SPA + Tailwind\nPinia · Vue Router · Mercado Pago SDK"]
-    NGINX["🌐 Nginx - Reverse Proxy\nServe frontend build + uploads\nSSL/TLS Termination"]
+    CLIENT["🖥️ Client - Browser\nVue.js 3 SPA + Tailwind\nPinia · Vue Router · Mercado Pago SDK"]
+    NGINX["🌐 Nginx - Reverse Proxy\nServes frontend build + uploads\nSSL/TLS Termination"]
     GUNICORN["⚙️ Gunicorn - WSGI Server"]
     
     subgraph FLASK["Flask Application"]
@@ -199,7 +199,7 @@ flowchart TD
         AUTH["🔐 Auth\nJWT + Bcrypt + OTP"]
         RATE["🛡️ Rate Limit"]
         TALISMAN["🔒 Talisman\nCSP / HTTPS"]
-        ROUTES["📡 17 Módulos de Rotas\nadmin · products · images · orders\ncoupons · categories · collections\nshipping · pricing · fast_sales\nuser · cart · webhooks · public"]
+        ROUTES["📡 17 Route Modules\nadmin · products · images · orders\ncoupons · categories · collections\nshipping · pricing · fast_sales\nuser · cart · webhooks · public"]
         SERVICES["🔌 Services\nMelhor Envio · Upload Utils\nPassword Utils · JWT Helper"]
         ORM["🗃️ SQLAlchemy ORM\n20+ Models"]
         
@@ -217,49 +217,49 @@ flowchart TD
     NGINX -->|"Proxy Pass /api/*"| GUNICORN
     GUNICORN --> FLASK
     ORM --> DB
-    SERVICES -->|Pagamentos| MP
-    SERVICES -->|Frete| ME
+    SERVICES -->|Payments| MP
+    SERVICES -->|Shipping| ME
     SERVICES -->|E-mails| MAIL
 ```
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
 ```
 fullstack-ecommerce-platform-Showcase/
 │
 ├── backend/
 │   ├── rocca_app/
-│   │   ├── __init__.py              # App factory (Flask, extensões, CORS, Talisman, Mail)
-│   │   ├── models.py                # 20+ modelos SQLAlchemy
+│   │   ├── __init__.py              # App factory (Flask, extensions, CORS, Talisman, Mail)
+│   │   ├── models.py                # 20+ SQLAlchemy models
 │   │   ├── routes/
-│   │   │   ├── admin_product_routes.py    # CRUD de produtos (variantes, imagens, agendamento)
-│   │   │   ├── admin_images_routes.py     # Upload, otimização e gestão de imagens
-│   │   │   ├── admin_order_routes.py      # Gestão de pedidos administrativos
-│   │   │   ├── admin_coupon_routes.py     # CRUD de cupons com regras avançadas
-│   │   │   ├── admin_category_routes.py   # CRUD de categorias
-│   │   │   ├── admin_collection_routes.py # CRUD de coleções
-│   │   │   ├── admin_shipping_routes.py   # Integração Melhor Envio (carrinho de despacho)
-│   │   │   ├── admin_routes.py            # Gestão de usuários admin
-│   │   │   ├── admin_utils_routes.py      # Utilitários administrativos
-│   │   │   ├── fast_sale_routes.py        # Vendas rápidas (presenciais)
-│   │   │   ├── pricing_routes.py          # Calculadora de precificação
-│   │   │   ├── user_routes.py             # Auth, perfil, e-mail OTP, pedidos do cliente
-│   │   │   ├── user_product_routes.py     # Catálogo público de produtos
-│   │   │   ├── user_cart_routes.py        # Carrinho + checkout + Mercado Pago
-│   │   │   ├── shipping_routes.py         # Cálculo de frete público
-│   │   │   ├── public_coupon_routes.py    # Validação pública de cupons
-│   │   │   └── webhook_routes.py          # Webhooks do Mercado Pago
+│   │   │   ├── admin_product_routes.py    # Product CRUD (variants, images, scheduling)
+│   │   │   ├── admin_images_routes.py     # Image upload, optimization, and management
+│   │   │   ├── admin_order_routes.py      # Admin order management
+│   │   │   ├── admin_coupon_routes.py     # Coupon CRUD with advanced rules
+│   │   │   ├── admin_category_routes.py   # Category CRUD
+│   │   │   ├── admin_collection_routes.py # Collection CRUD
+│   │   │   ├── admin_shipping_routes.py   # Melhor Envio integration (shipping cart)
+│   │   │   ├── admin_routes.py            # Admin user management
+│   │   │   ├── admin_utils_routes.py      # Admin utilities
+│   │   │   ├── fast_sale_routes.py        # Quick (in-person) sales
+│   │   │   ├── pricing_routes.py          # Pricing calculator
+│   │   │   ├── user_routes.py             # Auth, profile, e-mail OTP, customer orders
+│   │   │   ├── user_product_routes.py     # Public product catalog
+│   │   │   ├── user_cart_routes.py        # Cart + checkout + Mercado Pago
+│   │   │   ├── shipping_routes.py         # Public shipping calculation
+│   │   │   ├── public_coupon_routes.py    # Public coupon validation
+│   │   │   └── webhook_routes.py          # Mercado Pago webhooks
 │   │   ├── services/
-│   │   │   └── melhor_envio_service.py    # Integração Melhor Envio (frete + OAuth2)
+│   │   │   └── melhor_envio_service.py    # Melhor Envio integration (shipping + OAuth2)
 │   │   └── utils/
-│   │       ├── upload_utils.py            # Processamento de imagens (WebP, thumbnail, blur)
-│   │       ├── password_utils.py          # Hash e validação de senhas
-│   │       └── jwt_helper.py             # Configuração JWT
-│   ├── scheduler.py                 # Agendador de publicação de produtos
-│   ├── create_tables.py             # Script de criação de tabelas
-│   └── static/                      # Uploads de imagens
+│   │       ├── upload_utils.py            # Image processing (WebP, thumbnail, blur)
+│   │       ├── password_utils.py          # Password hashing and validation
+│   │       └── jwt_helper.py             # JWT configuration
+│   ├── scheduler.py                 # Product publish scheduler
+│   ├── create_tables.py             # Table creation script
+│   └── static/                      # Image uploads
 │
 ├── frontend/
 │   ├── index.html
@@ -268,28 +268,28 @@ fullstack-ecommerce-platform-Showcase/
 │   ├── package.json
 │   └── src/
 │       ├── App.vue
-│       ├── main.js                  # Bootstrap da app Vue
-│       ├── api.js                   # Configuração Axios
-│       ├── index.css                # Estilos globais
-│       ├── router/index.js          # Rotas com guards de autenticação
+│       ├── main.js                  # Vue app bootstrap
+│       ├── api.js                   # Axios configuration
+│       ├── index.css                # Global styles
+│       ├── router/index.js          # Routes with authentication guards
 │       ├── stores/
-│       │   ├── cart.js              # Estado do carrinho (persistido no backend)
-│       │   ├── user.js              # Estado de autenticação
-│       │   ├── ui.js                # Estado da UI (modais, sidebar)
-│       │   └── editMode.js          # Modo de edição admin
+│       │   ├── cart.js              # Cart state (persisted on backend)
+│       │   ├── user.js              # Authentication state
+│       │   ├── ui.js                # UI state (modals, sidebar)
+│       │   └── editMode.js          # Admin edit mode
 │       ├── views/
-│       │   ├── HomeView.vue         # Vitrine da loja
-│       │   ├── ProductsView.vue     # Listagem de produtos
-│       │   ├── ProductDetailView.vue # Detalhe do produto
-│       │   ├── ArchiveView.vue      # Arquivo/filtros
-│       │   ├── CartView.vue         # Carrinho de compras
-│       │   ├── CheckoutView.vue     # Checkout completo (endereço + frete + pagamento)
-│       │   ├── OrderSuccessView.vue # Confirmação de pedido
-│       │   ├── OrderPendingPixView.vue # Aguardando pagamento Pix
-│       │   ├── PrivacyPolicyView.vue # Política de Privacidade
-│       │   ├── ReturnPolicyView.vue # Política de Devolução
-│       │   ├── NotFoundView.vue     # Página 404
-│       │   ├── admin/               # 10 views administrativas
+│       │   ├── HomeView.vue         # Store homepage
+│       │   ├── ProductsView.vue     # Product listing
+│       │   ├── ProductDetailView.vue # Product detail
+│       │   ├── ArchiveView.vue      # Archive/filters
+│       │   ├── CartView.vue         # Shopping cart
+│       │   ├── CheckoutView.vue     # Full checkout (address + shipping + payment)
+│       │   ├── OrderSuccessView.vue # Order confirmation
+│       │   ├── OrderPendingPixView.vue # Awaiting Pix payment
+│       │   ├── PrivacyPolicyView.vue # Privacy Policy
+│       │   ├── ReturnPolicyView.vue # Return Policy
+│       │   ├── NotFoundView.vue     # 404 page
+│       │   ├── admin/               # 10 admin views
 │       │   │   ├── AdminProductsView.vue
 │       │   │   ├── AdminOrdersView.vue
 │       │   │   ├── AdminCouponsView.vue
@@ -300,115 +300,115 @@ fullstack-ecommerce-platform-Showcase/
 │       │   │   ├── AdminShippingView.vue
 │       │   │   ├── AdminUsersView.vue
 │       │   │   └── AdminBinProductsView.vue
-│       │   └── user/                # Área do cliente
+│       │   └── user/                # Customer area
 │       │       ├── UserProfileView.vue
 │       │       └── UserOrdersView.vue
 │       └── components/
-│           ├── NavBar.vue           # Navbar com carrinho dropdown
-│           ├── Footer.vue           # Footer da loja
-│           ├── AuthModal.vue        # Modal de login/cadastro/OTP
-│           ├── FuzzyImage.vue       # Componente de lazy loading com blur
-│           ├── CartDropdown.vue     # Preview do carrinho no navbar
-│           ├── admin/               # 17+ componentes administrativos
-│           ├── shop/                # Componentes da loja (ProductCard)
-│           ├── cart/                # Modais do carrinho
-│           ├── user/                # Componentes da área do cliente
-│           └── common/              # Componentes reutilizáveis (Select, DatePicker, etc.)
+│           ├── NavBar.vue           # Navbar with cart dropdown
+│           ├── Footer.vue           # Store footer
+│           ├── AuthModal.vue        # Login/sign-up/OTP modal
+│           ├── FuzzyImage.vue       # Lazy loading component with blur
+│           ├── CartDropdown.vue     # Cart preview in navbar
+│           ├── admin/               # 17+ admin components
+│           ├── shop/                # Store components (ProductCard)
+│           ├── cart/                # Cart modals
+│           ├── user/                # Customer area components
+│           └── common/              # Reusable components (Select, DatePicker, etc.)
 │
-├── config.py                        # Configuração por ambiente (Dev/Prod)
-├── run.py                           # Entrypoint da aplicação
-├── wsgi.py                          # WSGI config para Gunicorn
-└── requirements.txt                 # Dependências Python
+├── config.py                        # Per-environment configuration (Dev/Prod)
+├── run.py                           # Application entrypoint
+├── wsgi.py                          # WSGI config for Gunicorn
+└── requirements.txt                 # Python dependencies
 ```
 
 ---
 
-## 🗄️ Modelo de Dados
+## 🗄️ Data Model
 
-O sistema conta com **20+ tabelas** interrelacionadas:
+The system has **20+ interrelated tables**:
 
-| Model | Descrição |
+| Model | Description |
 |---|---|
-| `User` | Clientes e admins com campos de autenticação |
-| `Product` | Produtos com preço, dimensões de envio, agendamento e ordenação |
-| `ProductVariant` | Variantes de tamanho (P, M, G, GG, Único) com estoque individual |
-| `ProductImage` | Imagens com URL pública, thumbnail, e placeholder blur (base64) |
-| `Category` | Categorias de produtos |
-| `ProductCategory` | Associação N:N produto↔categoria com highlight_order |
-| `Collection` | Coleções de produtos |
-| `ProductCollection` | Associação N:N produto↔coleção |
-| `Cart` | Carrinho de compras do cliente (com cupom aplicado) |
-| `CartItem` | Itens do carrinho com variante e quantidade |
-| `Order` | Pedido completo: pagamento, frete, endereço, status |
-| `OrderItem` | Itens do pedido com variante e preço |
-| `Coupon` | Cupons com regras avançadas (%, fixo, frete grátis, limites) |
-| `ProductCoupon` | Associação cupom↔produto (inclusão/exclusão) |
-| `CategoryCoupon` | Associação cupom↔categoria (inclusão/exclusão) |
-| `CollectionCoupon` | Associação cupom↔coleção (inclusão/exclusão) |
-| `FastSale` | Vendas presenciais (balcão/evento) |
-| `FastSaleItem` | Itens de venda rápida |
-| `PricingItem` | Calculadora de precificação |
-| `AppSetting` | Configurações da app (tokens OAuth2 da Melhor Envio) |
-| `EmailVerificationToken` | Tokens OTP para verificação de e-mail |
+| `User` | Customers and admins with authentication fields |
+| `Product` | Products with price, shipping dimensions, scheduling, and ordering |
+| `ProductVariant` | Size variants (S, M, L, XL, One Size) with individual stock |
+| `ProductImage` | Images with public URL, thumbnail, and blur placeholder (base64) |
+| `Category` | Product categories |
+| `ProductCategory` | N:N product↔category association with highlight_order |
+| `Collection` | Product collections |
+| `ProductCollection` | N:N product↔collection association |
+| `Cart` | Customer shopping cart (with applied coupon) |
+| `CartItem` | Cart items with variant and quantity |
+| `Order` | Full order: payment, shipping, address, status |
+| `OrderItem` | Order items with variant and price |
+| `Coupon` | Coupons with advanced rules (%, fixed, free shipping, limits) |
+| `ProductCoupon` | Coupon↔product association (inclusion/exclusion) |
+| `CategoryCoupon` | Coupon↔category association (inclusion/exclusion) |
+| `CollectionCoupon` | Coupon↔collection association (inclusion/exclusion) |
+| `FastSale` | In-person sales (counter/event) |
+| `FastSaleItem` | Quick sale items |
+| `PricingItem` | Pricing calculator |
+| `AppSetting` | App settings (Melhor Envio OAuth2 tokens) |
+| `EmailVerificationToken` | OTP tokens for e-mail verification |
 
 ---
 
-## 🖼️ Pipeline de Imagens
+## 🖼️ Image Pipeline
 
-O sistema possui um pipeline customizado de otimização de imagens:
+The system has a custom image optimization pipeline:
 
 ```
 Upload (JPG/PNG/WebP)
   ↓
 Pillow (Python)
-  ├── Rotação EXIF automática (fotos de celular)
-  ├── Conversão para RGB
-  ├── Original otimizado → max 2000px, WebP quality 85
+  ├── Automatic EXIF rotation (mobile photos)
+  ├── Conversion to RGB
+  ├── Optimized original → max 2000px, WebP quality 85
   ├── Thumbnail → 600px, WebP quality 80
-  └── Placeholder blur → 20px, base64 data URI (inline)
+  └── Blur placeholder → 20px, base64 data URI (inline)
 ```
 
-- **Original**: Usado na página de detalhe do produto
-- **Thumbnail**: Usado no grid da loja (carregamento mais rápido)
-- **Placeholder**: Exibido enquanto a imagem carrega (efeito blur → nítido)
+- **Original**: Used on the product detail page
+- **Thumbnail**: Used in the store grid (faster loading)
+- **Placeholder**: Shown while the image loads (blur → sharp effect)
 
 ---
 
-## 🔒 Segurança
+## 🔒 Security
 
-- **JWT Authentication** — Tokens de acesso com expiração
-- **Bcrypt** — Hash de senhas com salt
-- **OTP por E-mail** — Verificação de e-mail em 6 dígitos (cadastro e troca de e-mail)
-- **Flask-Talisman** — Headers de segurança e Content Security Policy
-- **Rate Limiting** — Proteção contra brute force por IP
-- **CORS Dinâmico** — Origens restritas em produção, permissivo em desenvolvimento
-- **Route Guards** — Proteção de rotas no frontend com Vue Router
-- **Controle de Acesso** — Decorator `@admin_required` para rotas administrativas
-- **Webhooks Seguros** — Validação de assinatura nos webhooks do Mercado Pago
-- **Upload Seguro** — Validação de extensão e processamento server-side com Pillow
-- **Token de Upload** — Autenticação por token para uploads remotos (VPS ↔ Dev)
-
----
-
-## ⚠️ Aviso Importante
-
-Este repositório é uma **vitrine de código** (showcase). Ele **não pode ser executado** diretamente, pois:
-
-- Variáveis de ambiente (`.env`) foram removidas
-- Credenciais de banco de dados não estão presentes
-- Chaves de API (Mercado Pago, Melhor Envio) não estão incluídas
-- Configurações de servidor de produção não estão incluídas
-
-O objetivo é demonstrar a **qualidade do código**, **arquitetura** e **decisões técnicas** tomadas no desenvolvimento de uma plataforma e-commerce real em produção.
+- **JWT Authentication** — Access tokens with expiration
+- **Bcrypt** — Salted password hashing
+- **E-mail OTP** — 6-digit e-mail verification (sign-up and e-mail change)
+- **Flask-Talisman** — Security headers and Content Security Policy
+- **Rate Limiting** — Brute-force protection per IP
+- **Dynamic CORS** — Restricted origins in production, permissive in development
+- **Route Guards** — Frontend route protection with Vue Router
+- **Access Control** — `@admin_required` decorator for admin routes
+- **Secure Webhooks** — Signature validation on Mercado Pago webhooks
+- **Secure Upload** — Extension validation and server-side processing with Pillow
+- **Upload Token** — Token-based authentication for remote uploads (VPS ↔ Dev)
 
 ---
 
-## 👨‍💻 Autor
+## ⚠️ Important Notice
+
+This repository is a code **showcase**. It **cannot be run** directly, because:
+
+- Environment variables (`.env`) have been removed
+- Database credentials are not present
+- API keys (Mercado Pago, Melhor Envio) are not included
+- Production server configurations are not included
+
+The goal is to demonstrate the **code quality**, **architecture**, and **technical decisions** made while developing a real e-commerce platform in production.
+
+---
+
+## 👨‍💻 Author
 
 **Lucas Xavier**
 
 ---
 
 <p align="center">
-  <sub>Desenvolvido com dedicação — do backend ao deploy. 🚀</sub>
+  <sub>Built with dedication — from backend to deploy. 🚀</sub>
 </p>
